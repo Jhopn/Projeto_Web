@@ -6,7 +6,7 @@
 #navbar{
     padding: 1rem;
     box-sizing: border-box;
-    border-bottom: 2px solid black ;
+    border-bottom: 2px solid rgb(210, 210, 210) ;
 }
 #navbar li{
     display: inline-block;
@@ -30,36 +30,43 @@ a{
 }
 .container{
     display: flex;
+    padding: 0.5rem 0rem;
 }
 #search-bar{
-    border: 1px solid grey;
+    border: 1px solid rgb(210, 210, 210);
     margin: 1rem ;
     padding: 1rem;
 }
 #search-bar input{
     box-sizing: border-box;
-    width: 8.5rem;
+    border: 1px solid rgb(171, 171, 171);
+    border-right: 0px solid;
+    width: 9rem;
     padding: 0.3rem;
 }
 #search-bar input+input{
     border: 0px;
     font-size: 15px;
     color: white;
-    background-color: blue;
+    background-color: rgb(11, 166, 218);
     width: 4rem;
     padding: 0.3rem;
 }
 #categories{
-    border: 1px solid grey;
+    border: 1px solid rgb(210, 210, 210);
     margin: 1rem ;
     padding: 1rem;
 }
+h4{
+    font-size: 22px;
+}
 #categories li{
     display: block;
+    margin: 0.5rem;
 }
 
 #tags{
-    border: 1px solid grey;
+    border: 1px solid rgb(210, 210, 210);
     margin: 1rem ;
     padding: 1rem;
 }
@@ -69,11 +76,12 @@ a{
     justify-content: start;
 }
 #tags-container a{
-    width: 12rem;
+    font-size: 12px;
+    width: 13rem;
     height: 2rem;
     border-radius: 5px;
-    background-color: grey;
-    margin: 1rem;
+    background-color: rgb(225, 222, 222);
+    margin: 0.3rem;
     padding: 0.5rem;
     box-sizing: border-box;
 }
@@ -81,6 +89,7 @@ a{
     display: flex;
     flex-wrap: wrap;
 }
+
 .post{
     margin: 1.5rem;
     padding: 0.5rem;
@@ -88,21 +97,56 @@ a{
     width: 25%;
     right: 30%;
     text-align: start;
-    border: 1px solid grey;
+    border: 1px solid rgb(210, 210, 210);
     border-radius: 10px;
     box-sizing: border-box;
 }
 .post img{
     width: 100%;
 }
-.post p{
-    font-size: 12px;
+.post a{
+    color: rgb(88, 88, 88);
+}
+.post h3{
+    font-size: 20px;
+}
+.title{
+    margin: 1rem 0rem;
+}
+.none{
+    font-size: 16px;
+}
+.author{
+    font-weight: bolder;
+    font-size: 14px;
+    margin-bottom: 0.5rem;
+}
+.preco{
+    font-weight: bolder;
+    font-size: 14px;
+    margin-bottom: 0.5rem;
 }
 #footer{
-    border-top: 2px solid grey ;
+    border-top: 2px solid rgb(210, 210, 210) ;
     text-align: center;
     padding: 1rem;
 }
 #footer p{
     font-size: 13px;
+    margin: 0.5rem;
+}
+
+@media (max-width: 600px) {
+    .container{
+        flex-wrap: wrap;
+    }
+    #posts-container{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .none{
+        font-size: 0px;
+    }
+
 }
