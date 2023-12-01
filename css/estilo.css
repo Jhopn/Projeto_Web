@@ -38,19 +38,21 @@ a{
     padding: 1rem;
 }
 #search-bar input{
+    margin: 0.5rem 0rem;
     box-sizing: border-box;
     border: 1px solid rgb(171, 171, 171);
-    border-right: 0px solid;
-    width: 9rem;
-    padding: 0.3rem;
+    width: 12rem;
+    padding: 0.4rem;
 }
 #search-bar input+input{
+    margin: 0.5rem 0rem;
+    position: absolute;
     border: 0px;
     font-size: 15px;
     color: white;
     background-color: rgb(11, 166, 218);
     width: 4rem;
-    padding: 0.3rem;
+    padding: 0.4rem;
 }
 #categories{
     border: 1px solid rgb(210, 210, 210);
@@ -77,13 +79,14 @@ h4{
 }
 #tags-container a{
     font-size: 12px;
-    width: 13rem;
-    height: 2rem;
+    width: 17rem;
+    height: 2.5rem;
     border-radius: 5px;
     background-color: rgb(225, 222, 222);
     margin: 0.3rem;
-    padding: 0.5rem;
+    padding: 0.8rem;
     box-sizing: border-box;
+    color: rgb(101, 101, 101);
 }
 #posts-container{
     display: flex;
